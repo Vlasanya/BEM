@@ -1,0 +1,259 @@
+@import url('./normalize.css');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Train+One&display=swap');
+@import url('./vars.css');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    /* cursor: url(./assets/pic/cursor.svg), auto; */
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: var(--font-size-main);
+    font-family: 'Lato', sans-serif;
+    background: var(--backgr-main);
+    color: var(--font-color);
+}
+
+/* -------------------------------------------------- */
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+
+.container {
+    max-width: var(--width-container);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.header {
+    background: #fff;
+    padding: 9px 135px 0;
+}
+.logo__title {
+    font-family: 'Train One', cursive;
+}
+.menu {
+    padding-left: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+.menu_smaller {
+    font-size: 1.125rem;
+}
+.menu__link {
+    text-transform: uppercase;
+    color: var(--font-color);
+    text-decoration: none;
+}
+.menu__link:hover {
+    color: #18B5DC;
+    cursor: url(./assets/pic/cursor.svg), auto;
+
+}
+.line1 {
+    width: 100%;
+    border-bottom: 1px solid #BDBDBD;
+
+}
+
+/* .menu__link_blue {
+    color: blue;
+} */
+
+
+
+.btn {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    color: #3C3C3C;
+    padding: 10px 20px;
+    max-width: 130px;
+    max-height: 42px;
+    border: 1px solid #3C3C3C;
+    background: none;
+    text-transform: uppercase;
+}
+.btn:hover {
+    background: #18B5DC;
+    color: #FFFFFF;
+    border: 1px solid #18B5DC;
+    cursor: url(./assets/pic/cursor.svg), auto;
+
+}
+.main {
+    width: 100%;
+    padding: 150px 135px;
+    background: #F6F6F6; 
+}
+.content {
+    margin: 0 auto;
+
+}
+.title {
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #3C3C3C;
+    text-align: center;
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.line2 {
+    width: 45px;
+    border-bottom: 4px solid #DDDBDB;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+.subtitle {
+    max-width: 570px;
+    margin: 0 auto;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.5;
+    color: #3C3C3C;
+    margin-bottom: 60px;
+}
+.team {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+}
+.team__item img {
+    margin-bottom: 40px;
+}
+.team__item h3 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.2;
+    color: #282528;
+}
+.team__item p {
+    margin: 0;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #646464;
+}
+.team__item-1 {
+    width: 270px;
+    height: 270px;
+    background-image: url(./assets/pic/team_2.svg);
+    margin-bottom: 40px;
+}
+.team__item-2 {
+    width: 270px;
+    height: 270px;
+    background-image: url(./assets/pic/team_2.svg);
+    margin-bottom: 40px;
+}
+.team__item-3 {
+    width: 270px;
+    height: 270px;
+    background-image: url(./assets/pic/team_3.svg);
+    margin-bottom: 40px;
+}
+.team__item-4 {
+    width: 270px;
+    height: 270px;
+    background-image: url(./assets/pic/team_4.svg);
+    margin-bottom: 40px;
+}
+.team__item ul {
+    display: none;
+}
+.team__item div:hover {
+    background-color: #18B5DC;
+    background-image: none;
+}
+/* .team__item-:hover ul {
+    display: flex;
+} */
+.footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 40px 135px;
+}
+.social {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+}
+.social__item {
+    width: 42px;
+    height: 42px;
+    border: 1px solid #18B5DC;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.twitter {
+    background-image: url(./assets/pic/twitter.svg);
+}
+.facebook {
+    background-image: url(./assets/pic/facebook.svg);
+}
+.instagram {
+    background-image: url(./assets/pic/instagram.svg);
+}
+.linkendin {
+    background-image: url(./assets/pic/linkedin.svg);
+}
+.telegram {
+    background-image: url(./assets/pic/telegram.svg);
+}
+.team__item:hover {
+    cursor: url(./assets/pic/cursor.svg), auto;
+    /* background-color: #5DCBE6; */
+}
+.twitter:hover {
+    cursor: url(./assets/pic/cursor.svg), auto;
+    background-color: #5DCBE6;
+    background-image: url(./assets/pic/twitter-hover.svg);
+}
+.facebook:hover {
+    cursor: url(./assets/pic/cursor.svg), auto;
+    background-color: #5DCBE6;
+    background-image: url(./assets/pic/facebook-hover.svg);
+}
+.instagram:hover {
+    cursor: url(./assets/pic/cursor.svg), auto;
+    background-color: #5DCBE6;
+    background-image: url(./assets/pic/instagram-hover.svg);
+}
+.linkendin:hover {
+    cursor: url(./assets/pic/cursor.svg), auto;
+    background-color: #5DCBE6;
+    background-image: url(./assets/pic/linkedin-hover.svg);
+}
+.telegram:hover {
+    cursor: url(./assets/pic/cursor.svg), auto;
+    background-color: #5DCBE6;
+    background-image: url(./assets/pic/telegram-hover.svg);
+}

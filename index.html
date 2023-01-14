@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson_11 BEM</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- БЕМ 
+        1. Б - Блок, назалежна частина сторінки, яку можна перевикористовувати
+        2. Е - Елемент, завжди частина блоку
+        3. М - Модифікатор, відповідає на питання, який, яка,яке
+
+        Повинні звертатись до тегів тільки по класу
+    -->
+
+    <header class="header">
+        <div class="container d-flex">
+            <div class="logo d-flex">
+                <img src="./assets/pic/logo.svg" alt="Logo Company" class="logo__img l-img">
+                <h2 class="logo__title">ITLIFE</h2>
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Home</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Services</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">About</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="" class="menu__link">Contacts</a>
+                    </li>
+                </ul>
+            </nav>
+            <button class="btn">
+                Callback
+            </button>
+        </div>
+        
+    </header>
+    <div class="line1"></div>
+    <main class="main">
+        <div class="content">
+            <h2 class="title">who we are</h2>
+            <div class="line2"></div>
+            <p class="subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+            <ul class="team">
+                <li class="team__item">
+                    <div class="team__item-1 team__item-hover"></div>
+                    
+                    <h3>John Handson</h3>
+                    <p>Lead designer</p>
+                    <ul class="social_smaller">
+                        <l1 class="social__item twitter"></l1>
+                        <l1 class="social__item facebook"></l1>
+                        <l1 class="social__item instagram"></l1>
+                    </ul>
+                </li>
+                <li class="team__item">
+                    <div class="team__item-2"></div>
+                    <h3>Alex Cutter</h3>
+                    <p>Developer</p>
+                </li>
+                <li class="team__item">
+                    <div class="team__item-3"></div>
+                    <h3>Elena Simpson</h3>
+                    <p>Artist</p>
+                </li>
+                <li class="team__item">
+                    <div class="team__item-4"></div>
+                    <h3>Lily Allen</h3>
+                    <p>Graphic Designer</p>
+                </li>
+            </ul>
+        </div>
+    </main>
+
+    <footer class="footer">
+         <div class="logo d-flex">
+                <img src="./assets/pic/logo.svg" alt="Logo Company" class="logo__img l-img">
+                <h2 class="logo__title">ITLIFE</h2>
+            </div>
+        <nav class="nav">
+            <ul class="menu menu_smaller">
+                <li class="menu__item">
+                    <a href="" class="menu__link">Home</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Services</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">About</a>
+                </li>
+                <li class="menu__item">
+                    <a href="" class="menu__link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+        <ul class="social social_smaller">
+            <l1 class="social__item twitter">
+                <!-- <img src="./assets/pic/twitter.svg" alt="Twitter" class="social__icon"> -->
+            </l1>
+            <l1 class="social__item facebook">
+                <!-- <img src="./assets/pic/facebook.svg" alt="facebook" class="social__icon"> -->
+            </l1>
+            <l1 class="social__item instagram">
+                <!-- <img src="./assets/pic/instagram.svg" alt="instagram" class="social__icon"> -->
+            </l1>
+            <l1 class="social__item linkendin">
+                <!-- <img src="./assets/pic/linkedin.svg" alt="linkendin" class="social__icon"> -->
+            </l1>
+            <l1 class="social__item telegram">
+                <!-- <img src="./assets/pic/telegram.svg" alt="telegram" class="social__icon"> -->
+            </l1>
+
+        </ul>
+    </footer>
+</body>
+</html>
