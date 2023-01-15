@@ -74,12 +74,9 @@ body {
     border-bottom: 1px solid #BDBDBD;
 
 }
-
-/* .menu__link_blue {
-    color: blue;
-} */
-
-
+.nav-lower {
+    margin-bottom: 30px;
+}
 
 .btn {
     font-size: 18px;
@@ -141,9 +138,7 @@ body {
     gap: 30px;
     list-style: none;
 }
-.team__item img {
-    margin-bottom: 40px;
-}
+
 .team__item h3 {
     margin: 0;
     font-weight: 700;
@@ -184,6 +179,18 @@ body {
 }
 .team__item ul {
     display: none;
+    list-style: none;
+}
+.team__item-hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.team__item-hover:hover ul{
+    display: flex;
+    gap: 10px;
+
+
 }
 .team__item div:hover {
     background-color: #18B5DC;
@@ -204,6 +211,7 @@ body {
     gap: 10px;
     list-style: none;
 }
+
 .social__item {
     width: 42px;
     height: 42px;
@@ -213,14 +221,39 @@ body {
     background-position: center;
 
 }
-.twitter {
+.social__smaller {
+    margin: 0 auto;
+}
+.social__item-smaller {
+    width: 42px;
+    height: 42px;
+    list-style: none;
+    background-repeat: no-repeat;
+    background-position: center;
+} 
+.twitter,
+.twitter-smaller:hover {
     background-image: url(./assets/pic/twitter.svg);
+    width: 42px;
+    height: 42px;
+    border: 1px solid #18B5DC;
+    background-color: #FFFFFF;
 }
-.facebook {
+.facebook,
+.facebook-smaller:hover {
     background-image: url(./assets/pic/facebook.svg);
+    width: 42px;
+    height: 42px;
+    border: 1px solid #18B5DC;
+    background-color: #FFFFFF;
 }
-.instagram {
+.instagram, 
+.instagram-smaller:hover {
     background-image: url(./assets/pic/instagram.svg);
+    width: 42px;
+    height: 42px;
+    border: 1px solid #18B5DC;
+    background-color: #FFFFFF;
 }
 .linkendin {
     background-image: url(./assets/pic/linkedin.svg);
@@ -232,16 +265,21 @@ body {
     cursor: url(./assets/pic/cursor.svg), auto;
     /* background-color: #5DCBE6; */
 }
+
+.twitter-smaller,
 .twitter:hover {
     cursor: url(./assets/pic/cursor.svg), auto;
     background-color: #5DCBE6;
     background-image: url(./assets/pic/twitter-hover.svg);
 }
+
+.facebook-smaller, 
 .facebook:hover {
     cursor: url(./assets/pic/cursor.svg), auto;
     background-color: #5DCBE6;
     background-image: url(./assets/pic/facebook-hover.svg);
 }
+.instagram-smaller, 
 .instagram:hover {
     cursor: url(./assets/pic/cursor.svg), auto;
     background-color: #5DCBE6;
